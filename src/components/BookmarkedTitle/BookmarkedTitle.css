@@ -1,0 +1,13 @@
+.bookmarked-title {
+  background-color: #E5E4E2;
+  padding: 10px;
+}
+
+
+.bookmarked-title h4{
+
+ font-size: 18px;
+ padding: 20px;
+ border: 1px solid #111111;
+ margin: 10px;
+}

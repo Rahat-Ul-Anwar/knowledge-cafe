@@ -1,12 +1,18 @@
 import './BookmarkedTitle.css';
 
 
-const BookmarkedTitle = ({ bookmarked }) => {
-    const blog = bookmarked;
+const BookmarkedTitle = (props ) => {
+    const { bookmarked } = props;
+    console.log(bookmarked)
     return (
-        <div>
+        <div className='bookmarked-title'>
               <h3>Bookmarked Blogs : {bookmarked.length} </h3>
-              <h3> {blog?.title} </h3>
+            <div> 
+            {
+                
+                bookmarked.map(books => <h4 key={books.id}>{books.blog.title}</h4>)
+              }
+            </div>
         </div>
     );
 };
