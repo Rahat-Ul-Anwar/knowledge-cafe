@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "author": {
+            "name": "Alice Smith",
+            "image": "https://www.thenation.com/wp-content/uploads/2022/04/author-photo-getty-img.jpg"
+        },
+        "blog": {
+            "title": "Journey into Deep Space",
+            "cover_image": "https://media.gettyimages.com/id/1321598130/photo/casual-man-standing-on-space-platform-watching-planet-earth.jpg?s=612x612&w=0&k=20&c=oAWbriqjnS6ZyUCe2D4uP7wYfaJPLFbMoNnyu2VzeOE=",
+            "read_time": "8 min",
+            "publish_date": "2023-07-20"
+        }
+    },
+    {
+        "id": 2,
+        "author": {
+            "name": "Bob Johnson",
+            "image": "https://assets.contenthub.wolterskluwer.com/api/public/content/0de15dbf000f4a29a6622315c497fdf9?v=bf6def28&t=w854l"
+        },
+        "blog": {
+            "title": "The Art of Cooking Pasta",
+            "cover_image": "https://media.gettyimages.com/id/1216603577/photo/italian-pasta-fusilli-malfadine-preparation-in-kitchen.jpg?s=612x612&w=0&k=20&c=vy4vRk1pQcP4MlRwlnQsyl0K3TSuVA4heoqJ3BgA8Hc=",
+            "read_time": "15 min",
+            "publish_date": "2023-06-12"
+        }
+    },
+    {
+        "id": 3,
+        "author": {
+            "name": "Emily Brown",
+            "image": "https://cdn.britannica.com/10/227610-050-90F1E70F/Dan-Brown-author-2016.jpg?w=400&h=300&c=crop"
+        },
+        "blog": {
+            "title": "Hiking the Enchanted Forest",
+            "cover_image": "https://media.gettyimages.com/id/1300106555/photo/woman-with-a-yellow-jacket-in-the-middle-of-the-pine-forest-looking-up.jpg?s=612x612&w=0&k=20&c=4XEhCLHa-AqkVdQURzLZqTYs1gajGzs7sP8iqXUyxpo=",
+            "read_time": "12 min",
+            "publish_date": "2023-08-02"
+        }
+    },
+    {
+        "id": 4,
+        "author": {
+            "name": "David Wilson",
+            "image": "https://cdn.britannica.com/10/227610-050-90F1E70F/Dan-Brown-author-2016.jpg?w=400&h=300&c=crop"
+        },
+        "blog": {
+            "title": "Unveiling Ancient Mysteries",
+            "cover_image": "https://media.gettyimages.com/id/1345149155/photo/prague-statues-on-charles-bridgeat-night.jpg?s=612x612&w=0&k=20&c=wVRYK6FIdUo4jEZub1SIifIbzWEUofdtjpQZdX_51Jc=",
+            "read_time": "20 min",
+            "publish_date": "2023-05-05"
+        }
+    }
+]

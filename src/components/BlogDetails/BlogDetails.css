@@ -1,0 +1,34 @@
+.blog-details img {
+  width: 845px;
+  height: 450px;
+  margin:  20px 0px;
+}
+
+.blog-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.author-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-published-date p, h4 {
+    margin: 0px 10px;
+}
+.blog-info .author-info img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+
+.blog-read-time{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
