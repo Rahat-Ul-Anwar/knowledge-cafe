@@ -6,9 +6,11 @@ const BlogDetails = (props) => {
     const { name, image } = author;
     const { title, cover_image, publish_date, read_time } = blog;
     const handleBookmarkedClick = props.handleBookmarkedClick;
+    const handleMarkRead = props.handleMarkRead;
     
     
-
+  
+   
    
   return (
     <div className="blog-details">
@@ -30,7 +32,7 @@ const BlogDetails = (props) => {
         </div>
       </div>
       <h2>{title}</h2>
-      <a href="http://">Mark as read</a>
+      <a onClick={ () =>handleMarkRead(props.blogDetails)} >Mark as read</a>
     </div>
   );
 };

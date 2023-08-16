@@ -1,13 +1,14 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import "./Blogs.css";
-
 import BlogDetails from "../BlogDetails/BlogDetails";
 import BookmarkedTitle from "../BookmarkedTitle/BookmarkedTitle";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
   const [bookmarked, setBookmarked] = useState([]);
+
+  const [readCount, setReadCount] = useState(0);
 
   useEffect(() => {
     fetch("data.json")
@@ -16,10 +17,22 @@ const Blogs = () => {
   }, []);
 
   const handleBookmarkedClick = (bloginfo) => {
-    // console.log('blogInfo', bloginfo.blog.title);
     const newBookmarked = [...bookmarked, bloginfo];
     setBookmarked(newBookmarked);
-    // console.log(newBookmarked);
+  };
+
+  const handleMarkRead = (blogDetails) => {
+    let total = 0;
+    let readTime = blogDetails.blog.read_time;
+
+    let stringSplit = readTime.split(" ")[0];
+    let number = parseInt(stringSplit);
+
+    for (number in blogDetails) {
+      total = total + number;
+
+      setReadCount(total);
+    }
   };
 
   return (
@@ -30,11 +43,12 @@ const Blogs = () => {
             key={blogDetails.id}
             blogDetails={blogDetails}
             handleBookmarkedClick={handleBookmarkedClick}
+            handleMarkRead={handleMarkRead}
           ></BlogDetails>
         ))}
       </div>
       <div className="bookmarked-blogs">
-        <h2>Spent time on read: </h2>
+        <h2>Spent time on read: {readCount}</h2>
 
         <BookmarkedTitle bookmarked={bookmarked}></BookmarkedTitle>
       </div>
